@@ -19,11 +19,13 @@ public class main {
         int n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
 
         Operaciones op = new Operaciones();
-        op.leerNumero(n1, n2);
-        op.suma(n1, n2);
-        op.restar(n1, n2);
-        op.multiplicar(n1, n2);
-        op.dividir(n1, n2);
+        
+        int suma = op.suma(n1, n2);
+        int resta = op.restar(n1, n2);
+        int multiplicacion = op.multiplicar(n1, n2);
+        int division  = op.dividir(n1, n2);
+        
+        op.mostrarResultados(suma, resta, division, multiplicacion);
     }
 
 }

@@ -13,39 +13,33 @@ import javax.swing.JOptionPane;
  */
 public class Operaciones {
 
-    //Atributos
-    int suma;
-    int resta;
-    int multiplicacion;
-    int division;
-
     //Métodos
     //Método para digitar número
-    public void leerNumero(int numero1, int numero2) {
-        suma = numero1 + numero2;
-
-        numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite numero: "));
-        numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite numero: "));
-
+    public int suma(int numero1, int numero2) {
+        int suma = numero1 + numero2;
+        return suma;
     }
 
-    public void suma(int numero1, int numero2) {
-        suma = numero1 + numero2;
-        System.out.println("La suma es:" + suma);
+    public int dividir(int numero1, int numero2) {
+        int division = numero1 / numero2;
+        return division;
     }
 
-    public void dividir(int numero1, int numero2) {
-        division = numero1 / numero2;
-        System.out.println("La división es:" + division);
+    public int restar(int numero1, int numero2) {
+        int resta = numero1 - numero2;
+        return resta;
     }
 
-    public void restar(int numero1, int numero2) {
-        resta = numero1 - numero2;
-        System.out.println("La resta es:" + resta);
+    public int multiplicar(int numero1, int numero2) {
+        int multiplicacion = numero1 * numero2;
+        return multiplicacion;
     }
 
-    public void multiplicar(int numero1, int numero2) {
-        multiplicacion = numero1 * numero2;
-        System.out.println("La multiplicación es:" + multiplicacion);
+    public void mostrarResultados(int suma, int resta, int division, int multiplicacion) {
+        System.out.println("la suma es: " + suma);
+        System.out.println("la resta es: " + resta);
+        System.out.println("la division es: " + division);
+        System.out.println("la multiplicacion es: " + multiplicacion);
+
     }
 }
