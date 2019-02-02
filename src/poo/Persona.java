@@ -14,9 +14,9 @@ public class Persona {
     String nombre;
     int edad;
 
-    public Persona(int _edad, String _nombre) {
-        nombre = _nombre;
-        edad = _edad;
+    public Persona(int edad, String nombre) {
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
     public void mostrarDatos() {
